@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Platzi Video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+       
+            <nav class="nav">
+                <div class="titulo">
+                    <h1>Platzi<span>Video</span></h1>
+                </div>
+                
+                <div class="playlist">
+                    <h2>Mi playlist</h2>
+                    <ol>
+                        <li><a href="#">5 Reasons To Choose A Notebook Over A Computer Desktop</a></li>
+                        <li><a href="#">Get Around Easly with A New York Limousine Service</a></li>
+                        <li><a href="#">How To Cook A Tender Juicy Steak</a></li>
+                        <li><a href="#">How To Remove Kidney Stones</a></li>
+                        <li><a href="#">The Science Of Superstitions</a></li>
+                        <li><a href="#">5 Reasons To Choose A Notebook Over A Computer Desktop</a></li>
+                        <li><a href="#">Get Around Easly with A New York Limousine Service</a></li>
+                        <li><a href="#">How To Cook A Tender Juicy Steak</a></li>
+                        <li><a href="#">How To Remove Kidney Stones</a></li>
+                        <li><a href="#">The Science Of Superstitions</a></li>
+                    </ol>
+                </div>
+                
+                <div class="playlist-amigos">
+                    <h2>Playlist de Amigos</h2>
+                    <ul class="list-amigos">
+                        <li><a href="#"><img class="thumbnail" src="img/perfil1.png" alt="">Gordon Carrol</a></li>
+                        <li><a href="#"><img class="thumbnail" src="img/bambi.png" alt="">Gordon Carrol</a></li>
+                        <li><a href="#"><img class="thumbnail" src="img/popcorn.png" alt="">Gordon Carrol</a></li>
+                        <li><a href="#"><img class="thumbnail" src="img/perfil1.png" alt="">Gordon Carrol</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="menu-hamburg" id="burger-menu"><i class="icon icon-menu"></i></a>
+            </nav>
+        
+ 
+        <section class="video">
+            <iframe  class="youtube" src="https://www.youtube.com/embed/FGBhQbmPwH8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+        </section>
+        
+        <section class="share">
+            <div class="info-cancion">
+                <h3>Daft Punk - One More Time (Official Video)</h3>
+                <p><small>270.094.707 visualizaciones•24 feb. 2009</small></p>
+            </div>
+                
+            <div class="compartir">
+                <button class="btn-share">Agregar a mi lista</button>
+                <a href="#"><span class="icon icon-share"></span>Compartir</a>
+                <a href="#"><span class="icon icon-cloud-download"></span>Guardar</a>
+            </div>
+            <div class="labels">
+                <button>Electronic</button>
+                <button>Rela</button>
+                <button>80</button>
+                <button>Rock</button>
+            </div>
+        </section> 
+            
+        <section class="comentarios">
+            <h2>Comentarios</h2>
+            <div class="input-icons"> 
+                <img class="thumbnail" src="img/perfil1.png" alt="">
+                <input class="input-field" type="text"> 
+            </div>                    
+                
+            <ul class="list-comentarios">
+                <li class="comentario">
+                    <img class="thumbnail" src="img/perfil1.png" alt="">
+                    <p class="usuario-comentario">
+                        Gordon Carrol
+                        <span>Comentario de la persona.</span>
+                    </p>
+                    </li>
+                    <li class="comentario">
+                        <img class="thumbnail" src="img/perfil1.png" alt="">
+                        <p class="usuario-comentario">
+                            Gordon Carrol
+                            <span>Comentario de la persona.</span>
+                        </p>
+                    </li>
+                    <li class="comentario">
+                        <img class="thumbnail" src="img/perfil1.png" alt="">
+                        <p class="usuario-comentario">
+                            Gordon Carrol
+                            <span>Comentario de la persona.</span>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="sugerencias">
+                <h2>Sugerencias</h2>
+                <figure>
+                    <img src="img/moto.jpg" alt="Imanen de moto">
+                    <figcaption>Esta es una sugerencia</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/moto.jpg" alt="Imanen de moto">
+                    <figcaption>Esta es una sugerencia</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/moto.jpg" alt="Imanen de moto">
+                    <figcaption>Esta es una sugerencia</figcaption>
+                </figure>
+            </section>
+    </main> 
+    
+
+    
+        <script>
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('#burger-menu');
+        const playlist = document.querySelector('.playlist');
+        const playlist_amigos = document.querySelector('.playlist-amigos');
+        
+        burgerButton.addEventListener('click', function(){
+		playlist.style.display = playlist.style.display == 'inline-block'? 'none' : 'inline-block';
+        playlist_amigos.style.display = playlist_amigos.style.display == 'inline-block'? 'none' : 'inline-block';
+	});
+    
+    </script>
+
+</body>
+</html>
